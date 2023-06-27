@@ -2,7 +2,9 @@ import { View, Text, ImageBackground } from 'react-native'
 import styles from './styles'
 import Button from '../button'
 
-const CartItem = ({title, taglineCTA, tagline, image}) => {
+const CartItem = ({car}) => {
+  const { title, taglineCTA, tagline, image } = car
+
   return (
     <View style={styles.carContainer}>
       <ImageBackground
